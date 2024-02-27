@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogParaTi</title>
+    
+    <!--Prefetch-->
+    <link rel="prefetch" href="nosotros.html" as="document"> <!--Carga rapidamente la siguiente pagina que el usuario puede visitar-->
+    
+    <!--Preload-->
+    <link rel="preload" href="css/normalice.css" as="style">
+    <link rel="stylesheet" href="css/normalice.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header class="header">
+
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                   <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">ParaTi</span></h1> 
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Citas</a>
+                    <a href="contacto.html" class="navegacion__enlace">Mensaje</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="header__texto">
+            <h2 class="no-margin">Relato de Nuestra Historia</h2>
+            <p class="no-margin">Aqui voy a recapitular un poco de nuestra historia.
+            Te amo y eres lo mejor que me ha pasado</p>
+        </div>
+
+    </header>
+
+    <div class="contenedor contenido-principal">
+        <main class="blog">
+            <h3>Un Resumen de Nuestra Relación</h3>
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <picture> <!--Permite agregar diferentes formatos-->
+                        <source loading="lazy" srcset="img/blog1.webp" type="image/webp"> <!--Si el navegador soporta .webp carga esta imagen-->
+                        <img loading="lazy" src="img/blog1.jpg" alt="imagen blog"> <!--Lazy carga la imagen cuando hemos llegado a ella en el navegador-->
+                    </picture>
+                </div>
+
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Nuestra Primera Foto</h4>
+                    <p class="entrada__texto alineacion">Recuerdo con cariño la primera vez que fui a tu casa. Me preparaste un sándwich con milo, 
+                    que sabía a amor y afecto. Aunque tu estabas ocupada con tus clases, traté de sacarte una sonrisa, incluso cuando tu humor no era el mejor. 
+                    Después de tomar esta foto juntos, molestamos sobre hacerla nuestra foto secreta, pero yo la compartí en Instagram días después. 
+                    Este momento se convirtió en uno de mis recuerdos más emotivos contigo, recordándome la suerte de tenerte en mi vida.</p>
+                    <a href="entrada.html" class="boton boton--primario">Dale click para leer el texto completo</a>
+                </div>
+            </article>
+
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog2.webp" type="image/webp"> <!--Si el navegador soporta .webp carga esta imagen-->
+                        <img loading="lazy" src="img/blog2.jpg" alt="imagen blog"> <!--Lazy carga la imagen cuando hemos llegado a ella en el navegador-->
+                    </picture>
+                </div>
+
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Nuestro Primer Mes como Novios</h4>
+                    <p class="entrada__texto alineacion">Aqui relato, el como celebro contigo nuestro primer mes como novios. Te expreso gratitud por la conexión
+                    profunda que compartimos y por el crecimiento personal que hemos experimentado. Me emociona pensar en el futuro y en seguir construyendo una 
+                    vida llena de amor y felicidad juntos.</p>
+                    <a href="entrada2.html" class="boton boton--primario">Dale click para leer el texto completo</a>
+                </div>
+            </article>
+
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog3.webp" type="image/webp"> <!--Si el navegador soporta .webp carga esta imagen-->
+                        <img loading="lazy" src="img/blog3.jpg" alt="imagen blog"> <!--Lazy carga la imagen cuando hemos llegado a ella en el navegador-->
+                    </picture>
+                </div>
+
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Una de Nuestras Mejores Tardes</h4>
+                    <p class="entrada__texto alineacion">Fue una tarde especial junto a mi mujer, llena de conversaciones profundas y momentos entrañables. Después 
+                    de superar desafíos tanto separados como juntos, nos reconectamos profundamente. Recordaré siempre su sonrisa, los detalles de la tarde y las risas compartidas. 
+                    Estoy agradecido por tenerla a mi lado y sé que juntos podemos superar cualquier obstáculo. Te amo con todo mi corazón.</p>
+                    <a href="entrada3.html" class="boton boton--primario">Dale click para leer el texto completo</a>
+                </div>
+            </article>
+
+        </main>
+        <aside class="sidebar">
+            <h3>Nuestras Proximas Citas</h3>   
+            <ul class="cursos no-padding"><!--Lista no ordenada-->
+                <li class="widget-curso">
+                    <h4 class="no-margin">Volver a Comer Sushi</h4>
+                    <p class="widget-curso__label">Día: <span class="widget-curso__info">Marzo-Abril</span></p>
+                    <p class="widget-curso__label">Cupo: <span class="widget-curso__info">2</span></p>   
+                    <a href="cursos.html" class="boton boton--secundario">Mas Información</a> 
+                </li>
+
+                <li class="widget-curso">
+                    <h4 class="no-margin">Volver a Acampar</h4>
+                    <p class="widget-curso__label">Día: <span class="widget-curso__info">Pronto</span></p>
+                    <p class="widget-curso__label">Cupo: <span class="widget-curso__info">Por definir</span></p>   
+                    <a href="cursos.html" class="boton boton--secundario">Mas Información</a> 
+                </li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                   <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">ParaTi</span></h1> 
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Citas</a>
+                    <a href="contacto.html" class="navegacion__enlace">Mensaje</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <script src="js/modernizr.js"></script>
+</body>
+</html>
